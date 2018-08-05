@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>tk.guozilan</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>web</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>web - 部署此项目</name>
+  <url>https://github.com/guozilanTK</url>
+
+  <properties>
+      <base-controller>1.0.0-SNAPSHOT</base-controller>
+  </properties>
+
+  <dependencies>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context-support</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-expression</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-web</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-webmvc</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-core</artifactId>
+          <exclusions>
+              <exclusion>
+                  <groupId>commons-logging</groupId>
+                  <artifactId>commons-logging</artifactId>
+              </exclusion>
+          </exclusions>
+      </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>jcl-over-slf4j</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+      </dependency>
+
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+      </dependency>
+
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet.jsp</groupId>
+          <artifactId>jsp-api</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>jstl</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>commons-fileupload</groupId>
+          <artifactId>commons-fileupload</artifactId>
+          <version>1.3.2</version>
+      </dependency>
+      <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>druid</artifactId>
+      </dependency>
+
+      <dependency>
+          <groupId>org.mybatis</groupId>
+          <artifactId>mybatis</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>org.mybatis</groupId>
+          <artifactId>mybatis-spring</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>tk.mybatis</groupId>
+          <artifactId>mapper</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>com.github.pagehelper</groupId>
+          <artifactId>pagehelper</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+      </dependency>
+
+      <dependency>
+          <groupId>tk.guozilan</groupId>
+          <artifactId>base-controller</artifactId>
+          <version>${base-controller}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>tk.guozilan</groupId>
+          <artifactId>sample-controller</artifactId>
+          <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+          <groupId>tk.guozilan</groupId>
+          <artifactId>sample-service</artifactId>
+          <version>1.0.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+          <groupId>tk.guozilan</groupId>
+          <artifactId>sample-web</artifactId>
+          <version>1.0.0-SNAPSHOT</version>
+          <type>war</type>
+      </dependency>
+
+  </dependencies>
+
+  <build>
+    <finalName>web</finalName>
+  </build>
+</project>
