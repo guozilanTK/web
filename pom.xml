@@ -14,7 +14,7 @@
   <packaging>war</packaging>
 
   <name>web - 部署此项目</name>
-  <url>https://github.com/guozilanTK</url>
+  <url>https://github.com/guozilanTK/web</url>
 
   <properties>
       <base-controller>1.0.0-SNAPSHOT</base-controller>
