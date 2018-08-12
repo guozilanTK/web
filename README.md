@@ -13,6 +13,11 @@
 
 上述这些配置可以根据自己的需要去修改。
 
+>**特别注意**
+> applicationContext.xml 扫描的包名是 tk.guozilan 开头的，注意改成自己的包名。
+> mapper-servlet.xml 扫描的包名是 tk.guozilan 开头的，注意改成自己的包名。
+
+
 ## 静态资源
 
 本项目中只是用 layui 做了一个简单的示范，其他 ui 都可以使用。
